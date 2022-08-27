@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>community template</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comtemplate.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Wizick">
+        </div>
+        <ul class="side-menu top">
+            <li>
+                <a href="#">
+                    <i><img class="icon" src="../img/icon/home.png" alt=""></i>
+                    <div>Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/dashboard.png" alt=""></i>
+                    <div>Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/icon-park-outline_category-management.png" alt=""></i>
+                    <div>Document Manager</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i><img class="icon" src="../img/icon/akar-icons_edit.png" alt=""></i>
+                    <div> DocumentEditor</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/library.png" alt=""></i>
+                    <div> Clause Library</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/heroicons-outline_template.png" alt=""></i>
+                    <div>Template</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/gg_insights.png" alt=""></i>
+                    <div> Insight</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i><img class="icon" src="../img/icon/legal.png" alt=""></i>
+                    <div> Legal Terminology</div>
+                </a>
+            </li>
+
+            <hr>
+
+            <li class="username">
+                <a href="#">
+                    <img src="../img/nodp.png" class="display-pic" alt="">
+                    <div>Wizick User</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i><img class="icon" src="../img/icon/Notification.png" alt=""></i>
+                    <div> Notification <span class="notify">2</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i> <img class="icon" src="../img/icon/logout.png" alt=""></i>
+                    <div> Log out</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <i><img class="icon menu" src="../img/icon/align-left.png" alt=""></i>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode">
+                <i><img src="../img/icon/sun.png" alt=""></i>
+                <i><img class="moon" src="../img/icon/moon.png" alt=""></i>
+            </label>
+        </div>
+
+        <!-- Community Template Starts -->
+    <section id="community-temp" class="com-template tabcontent">
+        <img src="../img/group77.png" class="document-img" alt="">
+        <div class="btn-section">
+            <button class="btn-community active" id="">Community</button>
+            <button class="btn-template" id="btn-my-template">Template</button>
+        </div>
+        <div class="inner-sect">
+            <form class="search-bar" action="#">
+                <input type="text" placeholder="Search for documents" id="file-search-comTemp" name="search">
+                <i class="icon"><img src="../img/icon/search.png" alt=""></i>
+            </form>
+        </div>
+        <div class="title">
+            <h2>Surf through <br><span>Community Documents</span></h2>
+        </div>
+
+        <div class="btn-nav">
+            <button><img class="icon" id="btn-com-left" src="../img/icon/union-back.png" alt=""></button>
+            <span>Categories</span>
+            <button><img class="icon" id="btn-com-right" src="../img/icon/union-forward.png" alt=""></button>
+        </div>
+        <div id="cards" class="comm-cards">
+            <a href="#" class="card">
+                <div>
+                    <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>Real Estate Agreement</p>
+                </div>
+            </a>
+            <a href="#" class="card a-second">
+                <div>
+                    <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>Employee Contract</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div>
+                    <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>Jaso</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div>
+                    <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>My Estate Agreement</p>
+                </div>
+            </a>
+            <a href="#" class="card a-second">
+                <div>
+                    <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>Employee Contract Agreement</p>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <div>
+                    <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                    <p>Contract Agreement Jaso</p>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
+    <!-- Community Template Ends -->
+    </div>
+
+    <script>
+
+
+        // Community Template Slider
+        let right = [...document.querySelectorAll("#btn-com-right")];
+        let left = [...document.querySelectorAll("#btn-com-left")];
+        let commCards = [...document.querySelectorAll(".comm-cards")];
+
+
+        commCards.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            right[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            });
+            left[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            });
+        });
+
+
+    </script>
+
+   
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
